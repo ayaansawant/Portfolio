@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayaan Sawant | Resume</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #eef1f5;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .resume {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #fff;
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+      min-height: 1100px;
+    }
+
+    /* LEFT SIDEBAR */
+    .sidebar {
+      background: #172033;
+      color: white;
+      padding: 40px 28px;
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .profile-circle {
+      width: 115px;
+      height: 115px;
+      border-radius: 50%;
+      background: #fff;
+      color: #172033;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 18px;
+      font-size: 38px;
+      font-weight: bold;
+    }
+
+    .profile h1 {
+      font-size: 25px;
+      letter-spacing: 1px;
+    }
+
+    .profile p {
+      color: #b9c2d0;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .side-section {
+      margin-top: 30px;
+    }
+
+    .side-section h2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #8fc7ff;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #354158;
+      padding-bottom: 7px;
+    }
+
+    .side-section p,
+    .side-section li {
+      font-size: 13px;
+      color: #dce2eb;
+    }
+
+    .side-section ul {
+      list-style: none;
+    }
+
+    .side-section li {
+      margin-bottom: 7px;
+    }
+
+    /* MAIN CONTENT */
+    .main {
+      padding: 45px 48px;
+    }
+
+    .main-header {
+      border-bottom: 2px solid #172033;
+      padding-bottom: 22px;
+      margin-bottom: 28px;
+    }
+
+    .main-header h1 {
+      font-size: 38px;
+      color: #172033;
+      letter-spacing: 1px;
+    }
+
+    .main-header .title {
+      font-size: 17px;
+      color: #55708d;
+      margin-top: 3px;
+    }
+
+    .contact {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      font-size: 13px;
+      color: #555;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      font-size: 18px;
+      color: #172033;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-left: 4px solid #4c91c9;
+      padding-left: 10px;
+      margin-bottom: 14px;
+    }
+
+    .section p {
+      font-size: 14px;
+      color: #444;
+    }
+
+    .education-item,
+    .project {
+      margin-bottom: 18px;
+    }
+
+    .education-item h3,
+    .project h3 {
+      font-size: 16px;
+      color: #26364a;
+      margin-bottom: 2px;
+    }
+
+    .education-item .date,
+    .project .date {
+      font-size: 13px;
+      color: #6c7a89;
+      margin-bottom: 5px;
+    }
+
+    .project ul {
+      padding-left: 20px;
+    }
+
+    .project li {
+      font-size: 13.5px;
+      color: #444;
+      margin-bottom: 4px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill {
+      background: #edf4fa;
+      color: #274967;
+      padding: 6px 11px;
+      border-radius: 4px;
+      font-size: 12px;
+      border: 1px solid #d4e3ef;
+    }
+
+    .interest-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px 20px;
+    }
+
+    .interest-grid div {
+      font-size: 13px;
+      color: #444;
+    }
+
+    .footer {
+      margin-top: 35px;
+      padding-top: 15px;
+      border-top: 1px solid #ddd;
+      text-align: center;
+      font-size: 11px;
+      color: #888;
+    }
+
+    /* MOBILE */
+    @media (max-width: 750px) {
+      .resume {
+        margin: 0;
+        display: block;
+        box-shadow: none;
+      }
+
+      .sidebar {
+        padding: 35px 25px;
+      }
+
+      .main {
+        padding: 35px 25px;
+      }
+
+      .main-header h1 {
+        font-size: 30px;
+      }
+
+      .interest-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* PRINT */
+    @media print {
+      body {
+        background: white;
+      }
+
+      .resume {
+        margin: 0;
+        box-shadow: none;
+        max-width: 100%;
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="resume">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <div class="profile">
+        <div class="profile-circle">AS</div>
+        <h1>Ayaan Sawant</h1>
+        <p>BBA Student</p>
+      </div>
+
+      <div class="side-section">
+        <h2>Contact</h2>
+        <p>📍 Goa, India</p>
+        <p>📞 [Phone Number]</p>
+        <p>✉️ [Email Address]</p>
+        <p>🔗 [LinkedIn]</p>
+      </div>
+
+      <div class="side-section">
+        <h2>Languages</h2>
+        <ul>
+          <li>English</li>
+          <li>Hindi</li>
+          <li>Konkani</li>
+        </ul>
+      </div>
+
+      <div class="side-section">
+        <h2>Core Skills</h2>
+        <ul>
+          <li>Communication</li>
+          <li>Teamwork</li>
+          <li>Presentation</li>
+          <li>Negotiation</li>
+          <li>Leadership</li>
+          <li>Problem Solving</li>
+          <li>Creative Thinking</li>
+          <li>Time Management</li>
+        </ul>
+      </div>
+
+      <div class="side-section">
+        <h2>Digital Skills</h2>
+        <ul>
+          <li>Microsoft Excel</li>
+          <li>Microsoft PowerPoint</li>
+          <li>Microsoft Word</li>
+          <li>Digital Storytelling</li>
+          <li>Video Editing</li>
+          <li>Social Media Content</li>
+          <li>AI Tools</li>
+        </ul>
+      </div>
+
+      <div class="side-section">
+        <h2>Interests</h2>
+        <ul>
+          <li>Entrepreneurship</li>
+          <li>Marketing</li>
+          <li>Real Estate</li>
+          <li>E-commerce</li>
+          <li>Content Creation</li>
+          <li>Business Development</li>
+        </ul>
+      </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+      <div class="main-header">
+        <h1>Ayaan Sawant</h1>
+        <div class="title">
+          BBA Student | Business & Entrepreneurship Enthusiast
+        </div>
+
+        <div class="contact">
+          <span>Goa, India</span>
+          <span>•</span>
+          <span>[Phone Number]</span>
+          <span>•</span>
+          <span>[Email Address]</span>
+        </div>
+      </div>
+
+
+      <!-- PROFILE -->
+      <section class="section">
+        <h2>Profile</h2>
+
+        <p>
+          BBA student at Dempo College, Goa, interested in business,
+          entrepreneurship, digital content creation, marketing and real
+          estate. Interested in gaining practical experience, developing
+          professional skills and applying classroom knowledge to
+          real-world business situations. Strong interest in continuous
+          learning and self-improvement.
+        </p>
+      </section>
+
+
+      <!-- EDUCATION -->
+      <section class="section">
+        <h2>Education</h2>
+
+        <div class="education-item">
+          <h3>Dempo College of Commerce & Economics, Goa</h3>
+          <div class="date">Bachelor of Business Administration (BBA) • Currently Pursuing</div>
+
+          <p>
+            Relevant subjects include Management Process, Human Resource
+            Management, Marketing Management, Corporate Communications,
+            Essentials of Communication, AI for Business, Computational
+            Skills, Environmental Laws and Digital Storytelling.
+          </p>
+        </div>
+
+        <div class="education-item">
+          <h3>Goa Board</h3>
+          <div class="date">Vocational — Accountancy & Auditing (A&A)</div>
+        </div>
+      </section>
+
+
+      <!-- PROJECTS -->
+      <section class="section">
+        <h2>Academic Projects</h2>
+
+        <div class="project">
+          <h3>Coca-Cola — Business Environment Analysis</h3>
+          <ul>
+            <li>Prepared a business environment presentation using the PESTLE framework.</li>
+            <li>Analysed external factors affecting a major business organisation.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h3>Corporate Communication — Harvard Case Study</h3>
+          <ul>
+            <li>Analysed organisational communication issues through a case study.</li>
+            <li>Presented possible approaches to communication-related challenges.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h3>Supplier Negotiation Roleplay</h3>
+          <ul>
+            <li>Participated in a team-based supplier negotiation activity.</li>
+            <li>Practised negotiation, communication, teamwork and problem solving.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h3>Digital Storytelling</h3>
+          <ul>
+            <li>Participated in a group digital storytelling project.</li>
+            <li>Collaborated with team members to develop and present a digital story.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h3>Environmental Law — PIL Project</h3>
+          <ul>
+            <li>Worked on an academic Public Interest Litigation project concerning road and pothole issues in Goa.</li>
+            <li>Studied public-interest legal remedies and environmental law concepts.</li>
+          </ul>
+        </div>
+      </section>
+
+
+      <!-- BUSINESS -->
+      <section class="section">
+        <h2>Business & Entrepreneurial Interests</h2>
+
+        <p>
+          Interested in exploring digital content creation, YouTube,
+          Instagram content, freelancing, video editing, dropshipping,
+          e-commerce and real estate.
+        </p>
+
+        <br>
+
+        <div class="project">
+          <h3>Content Creation</h3>
+          <p>
+            Exploring faceless YouTube content focused on engaging
+            English-language videos, including experience-based and
+            paranormal/CCTV-style content.
+          </p>
+        </div>
+
+        <div class="project">
+          <h3>E-commerce & Dropshipping</h3>
+          <p>
+            Interested in small-scale e-commerce and dropshipping,
+            particularly practical, affordable consumer products.
+          </p>
+        </div>
+
+        <div class="project">
+          <h3>Real Estate</h3>
+          <p>
+            Interested in real-estate networking, property sales and
+            connecting potential buyers with property opportunities.
+          </p>
+        </div>
+      </section>
+
+
+      <!-- BUSINESS KNOWLEDGE -->
+      <section class="section">
+        <h2>Business Knowledge</h2>
+
+        <div class="skills">
+          <span class="skill">Management</span>
+          <span class="skill">Human Resources</span>
+          <span class="skill">Marketing</span>
+          <span class="skill">Corporate Communication</span>
+          <span class="skill">Business Environment</span>
+          <span class="skill">Entrepreneurship</span>
+          <span class="skill">Accounting</span>
+          <span class="skill">Business Law</span>
+          <span class="skill">Business Analysis</span>
+        </div>
+      </section>
+
+
+      <!-- PERSONAL STRENGTHS -->
+      <section class="section">
+        <h2>Personal Strengths</h2>
+
+        <div class="interest-grid">
+          <div>✓ Willingness to learn</div>
+          <div>✓ Adaptability</div>
+          <div>✓ Continuous improvement</div>
+          <div>✓ Team collaboration</div>
+          <div>✓ Presentation skills</div>
+          <div>✓ Creative approach</div>
+          <div>✓ Practical problem solving</div>
+          <div>✓ Entrepreneurial mindset</div>
+        </div>
+      </section>
+
+
+      <div class="footer">
+        References available upon request.
+      </div>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
